@@ -13,77 +13,70 @@
         android:layout_gravity="center_horizontal"
         android:textSize="25dp"/>
 
-    <TableLayout
+    <EditText
+        android:id="@+id/edtPesq"
+        android:hint="Insira o Id:"
         android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Buscar"/>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="100dp">
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Registros:"
+        android:textSize="15dp"/>
 
-        <TableRow>
-            <EditText
-                android:id="@+id/edtPesq"
-                android:hint="Insira o Id:"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"/>
-            <Space
-                android:layout_width="40dp"/>
-            <Button
-                android:id="@+id/btnBuscar"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:text="Buscar"/>
-        </TableRow>
-
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:textAlignment="center"
-            android:text="Registros:"
-            android:textSize="15dp"/>
-
-        <EditText
-            android:id="@+id/txtResultId"
-            android:editable="false"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif"
-            android:textAlignment="center"/>
-
-        <EditText
-            android:id="@+id/txtResultNome"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:textAlignment="center"/>
-
-        <EditText
-            android:id="@+id/txtResultEnd"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:textAlignment="center"/>
-
-        <EditText
-            android:id="@+id/txtResultBairro"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:textAlignment="center"/>
-
-        <EditText
-            android:id="@+id/txtResultCep"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:textAlignment="center"/>
-    </TableLayout>
-    <Space
+    <EditText
+        android:id="@+id/txtResultId"
+        android:editable="false"
+        android:hint="ID"
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/txtResultNome"
+        android:hint="Nome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/txtResultEnd"
+        android:hint="Endereço"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/txtResultBairro"
+        android:hint="Bairro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/txtResultCep"
+        android:hint="CEP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/btnEditar"
